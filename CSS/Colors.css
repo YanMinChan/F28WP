@@ -1,0 +1,14 @@
+/* Hex value */
+/* It is specified in the form #rrggbb, where between 00 and ff */
+/* i.e. #ff0000 is red */
+
+body {
+  color: #ee82ee;
+}
+
+/* Hex value can be simplified to 3 digits if both values for RR, GG and BB are the same */
+/* i.e. #ff00cc can be written as #f0c */
+
+p {
+  color: #f0c;
+}
