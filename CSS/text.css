@@ -1,0 +1,8 @@
+<!-- text-align adjust the alignment of a text, i.e. left, right, center, justify -->
+h1 {text-align: left}
+h2 {text-align: center}
+h3 {text-align: justify}
+
+<!-- text-align-last justify the alignment of last line of text -->
+
+h4 {text-align-last: right}
