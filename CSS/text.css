@@ -1,8 +1,25 @@
+/* text color is set by using "color" */
+p {color: red;}
+
 /* text-align adjust the alignment of a text, i.e. left, right, center, justify */
-h1 {text-align: left}
-h2 {text-align: center}
-h3 {text-align: justify}
+h1 {text-align: left;}
+h2 {text-align: center;}
+h3 {text-align: justify;}
 
 /* text-align-last justify the alignment of last line of text */
 
-h4 {text-align-last: right}
+h4 {text-align-last: right;}
+
+/* direction states the direction of a text */
+/* unicode-bidi: bidi-override overrides the original direction */
+
+h1 { 
+	direction: rtl;
+	unicode-bidi: bidi-override;
+}
+
+/* vertical-align sets the vertical alignment of an element, i.e. image */
+
+img.a {
+	vertical-align: text-top;
+}
