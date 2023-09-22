@@ -1,25 +1,104 @@
+/* text decoration is set by text-decoration-line */
+/* the decoration color can be changed using text-decoration-color */
+/* text-decoration-style set properties of the decoration line (i.e. dotted, wavy) */
+/* text-decoration-thickness sets the thickness of the decoration line */
+p.title {
+	font-size: 30px;
+	text-decoration-line: underline;
+	text-decoration-color: blue;
+}
+
+p.exp {
+	font-size: 25px;
+	color: darkgreen;
+}
+
+div {
+	outline-style:dotted;
+	padding: 15px;
+}
 /* text color is set by using "color" */
-p {color: red;}
-
 /* text-align adjust the alignment of a text, i.e. left, right, center, justify */
-h1 {text-align: left;}
-h2 {text-align: center;}
-h3 {text-align: justify;}
-
-/* text-align-last justify the alignment of last line of text */
-
-h4 {text-align-last: right;}
+h1 {
+	text-align: center;
+	color: #0000ff;
+}
+#center {text-align: center;}
+#left {text-align: left;}
+#right {text-align: right;}
 
 /* direction states the direction of a text */
 /* unicode-bidi: bidi-override overrides the original direction */
-
-h1 { 
-	direction: rtl;
+#rtl {
+	direction:rtl;
 	unicode-bidi: bidi-override;
 }
 
-/* vertical-align sets the vertical alignment of an element, i.e. image */
+/* text-align-last justify the alignment of last line of text */
+#lastline {text-align-last: right;}
 
+/* vertical-align sets the vertical alignment of an element, i.e. image */
+/* we dont have any image in the text.html yet */
 img.a {
 	vertical-align: text-top;
+}
+
+/* text decoration short-hand */
+#decoshort1 {
+	text-decoration: underline;
+}
+
+#decoshort2 {
+	text-decoration: underline blue dashed;
+}
+
+#decoshort3 {
+	text-decoration: underline purple wavy 1px;
+}
+
+/* text-transform */
+#uppercase {
+	text-transform: uppercase;
+}
+
+#lowercase {
+	text-transform: lowercase;
+}
+
+#capitalize{
+	text-transform: capitalize;
+}
+
+/* text spacing */
+
+/* indentation of first line */
+#indent {
+	text-indent: 20px;
+}
+
+/* spacing between words */
+#wspacing {
+	word-spacing: 5px;
+}
+
+/* spacing between letters */
+#lspacing {
+	letter-spacing: 3px;
+}
+
+/* space between lines */
+#lheight {
+	line-height:5.0;
+}
+
+/* specify how white space is handled */
+#wspace{
+	white-space: nowrap;
+}
+
+/* text shadow */
+/* it will be tested on the headings */
+/* text-shadow: <horizontal shadow> <vertical shadow> <blur effect> <color> */
+h1 {
+	text-shadow: 2px 2px 5px lightblue;
 }
