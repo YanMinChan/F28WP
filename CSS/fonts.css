@@ -1,0 +1,78 @@
+/* Some setup for the html */
+
+p.title {
+	font-size:30px;
+	text-decoration: underline blue;
+}
+
+p.exp {
+	font-size: 25px;
+	color: darkgreen;
+}
+
+div {
+	outline-style:dotted;
+	padding: 15px;
+}
+
+/* font family */
+/* font listed after the first font are fall back fonts 
+(i.e. if the first one does not work, the browser is going to try the next one */
+
+#serif {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#sans {
+	font-family: Arial, sans-serif;
+}
+
+#monospace {
+	font-family: Monospace, Courier, monospace;
+}
+
+#cursive {
+	font-family: cursive;
+}
+
+#fantasy {
+	font-family: Papyrus, fantasy;
+}
+
+/* Font style */
+#italic {
+	font-style:italic;
+}
+
+#oblique {
+	font-style:oblique;
+}
+
+#bold {
+	font-weight:bold;
+}
+
+#smallcaps {
+	font-variant: small-caps;
+}
+
+/* font size */
+body {
+	font-size: 50%;
+}
+
+#px {
+	font-size: 16px;
+}
+
+#em {
+	font-size: 1.5em;
+}
+
+#percentage {
+	font-size:80%;
+}
+
+#vw {
+	font-size: 10vw;
+}
