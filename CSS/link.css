@@ -1,0 +1,18 @@
+/* Some basic setup */
+
+p.title {
+	font-size:30px;
+	text-decoration: underline blue;
+}
+
+p.exp {
+	font-size: 25px;
+	color: green;
+}
+
+div {
+	outline-style: dotted;
+	padding: 15px;
+}
+
+/* Link style */
