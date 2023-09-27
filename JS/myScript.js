@@ -11,7 +11,7 @@ function docWrite(){
 }
 
 /* window.alert display an alert box */
-window.alert("Hello");
+//window.alert("Hello");
 
 
 /* window.print display a print option */
@@ -25,3 +25,10 @@ function getConsole(){
 	document.getElementById("beautiful").innerHTML = "Press F12 to open console.";
 	console.log("This is the console log.");
 }
+
+
+{
+	var a = "Hi hi";
+}
+
+alert(a);
