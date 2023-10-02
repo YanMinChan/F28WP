@@ -12,16 +12,26 @@
       h1, h2 {
         color: green;
       }
+
+	  p.cat {
+		background-color: lightblue;
+	  }
+
+	  p#blabla{
+		color: red;
+	  }
     </style>
   </head>
   <body>
     <h1 class = "center"> This heading will be affected.</h1>
     <h2 class = "center"> This heading will be affected.</h2>
-    <p class = "cat"> This paragraph will not be affected.</p>
+    <p class = "cat"> This paragraph will be with light blue background.</p>
     <p class = "left"> This paragraph will be affected.</p>
 
     <!-- It can also refer to more than one class -->
+	<!-- However, for ID, there can only be one ID -->
     <p class = "cat left"> This paragraph will be affected. </p>
+	<p id = "blabla"> This paragraph is using ID. </p>
   </body>
 </html>
 
