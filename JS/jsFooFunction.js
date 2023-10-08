@@ -1,5 +1,3 @@
-
-
 var foo; //foo is undefined here
 
 foo = function foo() {
