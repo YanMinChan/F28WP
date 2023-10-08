@@ -17,16 +17,21 @@
 		//adding element
 		const para = document.createElement("a");
 		para.href = "https://www.w3schools.com/html/html_attributes.asp"; //add attribute to para element
-		para.innerHTML = "Link to HTML attributes";
+		para.innerHTML = "Link to HTML attributes" + "<br>";
 		document.body.appendChild(para);
-		
+
+		const eh = document.createElement("haha");
+		eh.id = "ha";
+		eh.innerHTML = "Click me!" + "<br>";
+		document.body.appendChild(eh);
+
 		//event handler
-		document.getElementById("try").onclick = function (){
-			let col = document.getElementById("try").style.color;
+		document.getElementById("ha").onclick = function (){
+			let col = document.getElementById("ha").style.color;
 			if (col == "red"){
-				document.getElementById("try").style.color = "blue";
+				document.getElementById("ha").style.color = "blue";
 			} else {
-				document.getElementById("try").style.color = "red";
+				document.getElementById("ha").style.color = "red";
 			}
 			
 		}
