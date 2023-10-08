@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<!-- DOM treat HTML elements (i.e. id try) as object and can perform action on them -->
+<head>
+	
+</head>
+<body>
+	<p id="try"></p>
+
+	<!-- DOM -->
+	<!-- Must put after the "try" paragraph, so the paragraph exist when innerHTML is called-->
+	<script>
+		//changing element
+		document.getElementById("try").innerHTML = "Hello there"; 
+		document.getElementById("try").style.color = "red";
+
+		//adding element
+		const para = document.createElement("a");
+		para.href = "https://www.w3schools.com/html/html_attributes.asp"; //add attribute to para element
+		para.innerHTML = "Link to HTML attributes";
+		document.body.appendChild(para);
+		
+		//event handler
+		document.getElementById("try").onclick = function (){
+			let col = document.getElementById("try").style.color;
+			if (col == "red"){
+				document.getElementById("try").style.color = "blue";
+			} else {
+				document.getElementById("try").style.color = "red";
+			}
+			
+		}
+		</script>
+</body>
