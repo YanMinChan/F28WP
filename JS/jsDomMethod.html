@@ -7,6 +7,10 @@
 <body>
 	<p id="try"></p>
 
+	<p id="treasurechest"> This is my treasure </p>
+	<button type="button" id="click">Click Me!</button>
+	<button type="button" id="rmwarning">Click Me too!</button> <br><br>
+
 	<!-- DOM -->
 	<!-- Must put after the "try" paragraph, so the paragraph exist when innerHTML is called-->
 	<script>
@@ -35,5 +39,26 @@
 			}
 			
 		}
+
+		//add event listener
+		function handler() { 
+			alert("Hands Off!");
+		}
+
+		function setWarning(){
+			var el = document.getElementById("treasurechest");
+			el.addEventListener("mouseover", handler);
+		}
+
+		document.getElementById("click").onclick = setWarning;
+
+		function unsetWarning() { 
+			var el = document.getElementById("treasurechest");
+			el.removeEventListener("mouseover", handler); 
+		}
+
+		document.getElementById("rmwarning").onclick = unsetWarning;
+
+
 		</script>
 </body>
