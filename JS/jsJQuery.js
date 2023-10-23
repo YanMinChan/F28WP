@@ -6,4 +6,5 @@ function modify() {
 $(function(){
 	$("#bob").text("Blue");
 	$(".lnk").wrap("<h1></h1>");
+	$("#parent2").parent().css({"color":"red"});
 })
