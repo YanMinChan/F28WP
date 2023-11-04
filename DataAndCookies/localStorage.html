@@ -1,0 +1,25 @@
+<!-- Notice that items stored in local storage will still remain after closing browser -->
+<!-- i.e. Show name button will show previous saved name even if browser had been reopened -->
+<script>
+	if (localStorage) { // Check if the localStorage object exists
+  		function savewb() { // Store data
+    		var txt = document.getElementById('sName').value;
+    		localStorage.setItem("name", txt);
+    	alert("Your name is saved.");
+  		}
+
+  		function accesswb() { // Retrieve data
+    		alert("Hi, " + localStorage.getItem("name"));
+  		}  
+	} else {
+  		alert("Sorry, your browser does not support local storage.");
+	}
+</script>
+
+<head>
+  <h1>Hello</h1>
+  <h3>Please enter your name</h3>
+  <input type="string" id="sName" /> <br><br>
+  <button onclick="savewb()">Save name</button>
+  <button onclick="accesswb()">Show name</button>
+</head>
