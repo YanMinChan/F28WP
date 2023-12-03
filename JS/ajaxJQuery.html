@@ -3,15 +3,20 @@
 	<head>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script>
+			//once document ready, the button will be given a function
+			// ajax work on the function
 			$(function(){
-				$("button").click(function(){
-					$.ajax({url:"ajaxJQuery.js", dataType:"script"});
+				$("#test").click(function(){
+					// somehow failing idc liao
+					$.ajax({url:"ajaxJQuery.js", dataType:"script", success: function(){alert("success");}})
+					.fail(function(){alert("fail");});
+					//alert("running");
 				});
 			});
 		</script>
 	</head>
 	<body>
-		<button>Click Me</button>
+		<button id="test">Click Me</button>
 	</body>
 
 </html>

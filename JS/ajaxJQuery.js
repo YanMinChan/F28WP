@@ -1,1 +1,1 @@
-alert("Hiyo");
+document.onload(alert("Hiyo"));
